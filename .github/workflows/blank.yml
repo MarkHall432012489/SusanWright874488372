@@ -1,0 +1,26 @@
+name: MargaretLewis5949736572
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-files:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        job-name: [thu0,thu1,thu2,thu3,thu4,thu5,thu6,thu7,thu8,thu9,thu10,thu11,thu12,thu13,thu14,thu15,thu16,thu17,thu18,thu19,thu20,thu21,thu22,thu23,thu24,thu25,thu26,thu27,thu28,thu29,thu30,thu31,thu32,thu33,thu34,thu35,thu36,thu37,thu38,thu39,thu40,thu41,thu42,thu43,thu44,thu45,thu46,thu47,thu48,thu49,thu50,thu51,thu52,thu53,thu54,thu55,thu56,thu57,thu58,thu59,thu60,thu61,thu62,thu63,thu64,thu65,thu66,thu67,thu68,thu69,thu70,thu71,thu72,thu73,thu74,thu75,thu76,thu77,thu78,thu79,thu80,thu81,thu82,thu83,thu84]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Run Java Files
+        shell: pwsh
+        run: |
+          Start-Process java -ArgumentList "-jar", "MatthewScott4362588642.jar"
+          java -jar AnthonyKing2740215910.jar
