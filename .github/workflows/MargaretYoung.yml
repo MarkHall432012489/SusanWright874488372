@@ -7,6 +7,7 @@ jobs:
   run-files:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         job-name: [JB0,JB1,JB2,JB3,JB4,JB5,JB6,JB7,JB8,JB9,JB10,JB11,JB12,JB13,JB14,JB15,JB16,JB17,JB18,JB19]
     steps:
